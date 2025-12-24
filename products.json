@@ -1,0 +1,64 @@
+
+[
+	{
+		"name": "Thread",
+		"description": "machine based industrial bag closing thread for rice bags closing,dhall bags closing etc.,",
+		"image": "thread.jpg"
+	},
+	{
+		"name": "pp woven bags",
+		"description": "Reusable, BPA-free, and keeps drinks cold for 24 hours. Stay hydrated and save the planet!",
+		"image": "bag1.jpg"
+	},
+	{
+		"name": "25KGS Rice Bags",
+		"description": "Rich bass, compact design, and waterproof. Take your music anywhere, anytime.",
+		"image": "bag2.jpg"
+	},
+	{
+		"name": "Smart Fitness Tracker",
+		"description": "Track your steps, heart rate, and sleep. Syncs with your phone for real-time health insights.",
+		"image": "bag3.jpg"
+	},
+	{
+		"name": "Wireless Mouse",
+		"description": "Ergonomic wireless mouse with long battery life and smooth tracking.",
+		"image": "thread2.jpg"
+	},
+	{
+		"name": "Desk Organizer",
+		"description": "Keep your workspace tidy with this multi-compartment desk organizer.",
+		"image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+	},
+	{
+		"name": "Reusable Coffee Cup",
+		"description": "Eco-friendly, insulated coffee cup for hot and cold drinks on the go.",
+		"image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
+	},
+	{
+		"name": "Notebook Set",
+		"description": "Set of 3 stylish notebooks for notes, sketches, and ideas.",
+		"image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80"
+	},
+	{
+		"name": "LED Desk Lamp",
+		"description": "Adjustable LED desk lamp with touch controls and USB charging port.",
+		"image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+	},
+	{
+		"name": "Travel Backpack",
+		"description": "Durable, water-resistant backpack with multiple compartments for travel and daily use.",
+		"image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80"
+	},
+	{
+		"name": "USB Flash Drive",
+		"description": "High-speed USB 3.0 flash drive for quick and easy file transfers.",
+		"image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+	},
+	{
+		"name": "Ceramic Mug",
+		"description": "Classic ceramic mug, perfect for coffee, tea, or any beverage.",
+		"image": "bag1.jpg"
+	}
+]
+
