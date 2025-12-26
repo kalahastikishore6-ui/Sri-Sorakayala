@@ -37,17 +37,11 @@ function renderProducts(products) {
 
 // Contact form submission
 document.addEventListener('DOMContentLoaded', () => {
-	const form = document.getElementById('contact-form');
-	if (form) {
-		form.addEventListener('submit', function (e) {
-			e.preventDefault();
-			const name = document.getElementById('name').value;
-			const phone = document.getElementById('phone').value;
-			const email = document.getElementById('email').value;
-			// You need a backend to actually send the email. This just shows a message.
-			document.getElementById('form-message').textContent = 'Thank you, ' + name + '! Your details have been received.';
-			form.reset();
-		});
-	}
+  const form = document.getElementById('contact-form');
+
+  form.addEventListener('submit', () => {
+    console.log("Form submitted to FormSubmit");
+  });
+
 });
 
