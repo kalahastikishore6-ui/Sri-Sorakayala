@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  max-width: 420px;
+  margin: auto;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.checkmark {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  background: #4caf50;
+  color: white;
+  font-size: 40px;
+  line-height: 70px;
+  border-radius: 50%;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #4facfe;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #007bff;
+}
