@@ -131,7 +131,7 @@ header p {
 /* ===== Company Hero Section ===== */
 .company-hero {
   width: 100%;
-  height: 65vh;
+  height: flexible;
   background: url("background.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
@@ -374,5 +374,6 @@ h2 {
     display: none;
   }
 }
+
 
 
