@@ -18,12 +18,12 @@
 	{
 		"name": "Thread",
 		"description": "machine based industrial bag closing thread for rice bags closing,dhall bags closing etc.,",
-		"image": "thread.jpg"
+		"image": "t1.jpg"
 	},
 	{
 		"name": "Thread",
 		"description": "Multipurpose industrial bag stiching and closing thread .",
-		"image": "thread2.jpg"
+		"image": "t2.jpg"
 	},
 	{
 		"name": "PP Woven Rolls",
@@ -33,7 +33,7 @@
 	{
 		"name": "Thread",
 		"description": "Manual hand sticking thread for bag closing especially for formers .",
-		"image": "thread3.jpg"
+		"image": "t3.jpg"
 	},
 	{
 		"name": "bag",
@@ -41,4 +41,5 @@
 		"image": "bag4.jpg"
 	}
 ]
+
 
