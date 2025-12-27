@@ -2,7 +2,7 @@
 :root {
   --primary: #3a1ec8;
   --secondary: #329a22;
-  --dark: #aa7b7b;
+  --dark: #190505;
   --light: #f7f8fa;
   --white: #ffffff;
 }
@@ -28,7 +28,7 @@
     color: var(--primary-color);
 }
 
-.nav-links {
+.nav-links { 
     display: flex;
     list-style: none;
     gap: 2rem;
@@ -142,7 +142,7 @@ h2 {
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
 }
 
@@ -161,7 +161,7 @@ h2 {
 
 .product-image {
   width: 100%;
-  height: 230px;
+  height: 370px;
   object-fit: cover;
 }
 
