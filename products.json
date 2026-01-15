@@ -3,42 +3,42 @@
 	{
 		"name": "pp woven bags",
 		"description": "Available in different size for diffrent purpose like groudnu filling,rice filling,paddy seeds,dhalls etc.,",
-		"image": "bag1.jpg"
+		"image": "../images/bag1.jpg"
 	},
 	{
 		"name": "25KGS Rice Bags",
 		"description": "Rich bass, compact design, and waterproof. Take your music anywhere, anytime.",
-		"image": "bag2.jpg"
+		"image": "../images/bag2.jpg"
 	},
 	{
 		"name": "Jute/Gunny bags",
 		"description": "Available in different size for diffrent purpose like groudnu filling,rice filling,paddy seeds etc.,",
-		"image": "bag3.jpg"
+		"image": "../images/bag3.jpg"
 	},
 	{
 		"name": "Thread",
 		"description": "machine based industrial bag closing thread for rice bags closing,dhall bags closing etc.,",
-		"image": "t1.jpg"
+		"image": "../images/t1.jpg"
 	},
 	{
 		"name": "Thread",
 		"description": "Multipurpose industrial bag stiching and closing thread .",
-		"image": "t2.jpg"
+		"image": "../images/t2.jpg"
 	},
 	{
 		"name": "PP Woven Rolls",
 		"description": "Different size and different colours of rolls will available.",
-		"image": "roll.jpg"
+		"image": "../images/roll.jpg"
 	},
 	{
 		"name": "Thread",
 		"description": "Manual hand sticking thread for bag closing especially for formers .",
-		"image": "t3.jpg"
+		"image": "../images/t3.jpg"
 	},
 	{
 		"name": "bag",
 		"description": "for filling Onions and Garlic,Available in multiple color .",
-		"image": "bag4.jpg"
+		"image": "../images/bag4.jpg"
 	}
 ]
 

@@ -58,6 +58,7 @@ body {
   background: var(--light);
   color: var(--dark);
   line-height: 1.6;
+  padding-top: 80px;
 }
 
 .container {
@@ -69,17 +70,24 @@ body {
 /* ================= NAVBAR ================= */
 .navbar {
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
   background: var(--white);
-  box-shadow: 0 2px 8px rgba(60, 49, 205, 0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   z-index: 1000;
 }
 
-.navbar .container {
+.nav-container {
   display: flex;
-  justify-content: center;
-  padding: 1rem;
+  justify-content: space-between;
+  align-items: left;
+  padding: 1rem 20px;
+}
+
+.nav-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--primary);
 }
 
 .nav-links {
@@ -92,13 +100,37 @@ body {
   text-decoration: none;
   font-weight: 600;
   color: var(--dark);
-  transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: var(--primary);
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
+/* ===== MOBILE VIEW ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
 /* ================= HEADER ================= */
 header {
   background: linear-gradient(90deg, var(--primary), var(--secondary));
@@ -132,7 +164,7 @@ header p {
 .company-hero {
   width: 100%;
   height: flexible;
-  background: url("background.jpg") center/cover no-repeat;
+  background: url("../images/background.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;

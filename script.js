@@ -7,6 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		.catch(() => {
 			document.getElementById('products-grid').innerHTML = '<p>Unable to load products at this time.</p>';
 		});
+// Mobile navbar toggle
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
 
 	// Set current year in footer
 	document.getElementById('year').textContent = new Date().getFullYear();
