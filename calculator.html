@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GST Calculator</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+.container {
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    width:360px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+h2 { text-align:center; }
+
+.input-group {
+    display:flex;
+    gap:8px;
+}
+input, select {
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.result {
+    margin-top:15px;
+    font-size:15px;
+    line-height:1.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>GST Calculator</h2>
+
+    <!-- Qty * Price -->
+    <div class="input-group">
+        <input type="number" id="qty" placeholder="Qty">
+        <input type="number" id="price" placeholder="Price ₹">
+    </div>
+
+    <!-- Amount -->
+    <input type="number" id="amount" placeholder="Amount ₹">
+
+    <!-- GST Options -->
+    <select id="gst">
+        <option value="">Select GST %</option>
+        <option value="5">5%</option>
+        <option value="12">12%</option>
+        <option value="18">18%</option>
+        <option value="-5">-5%</option>
+        <option value="-12">-12%</option>
+        <option value="-18">-18%</option>
+    </select>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+const qtyEl = document.getElementById("qty");
+const priceEl = document.getElementById("price");
+const amountEl = document.getElementById("amount");
+const gstEl = document.getElementById("gst");
+const result = document.getElementById("result");
+
+document.querySelectorAll("input, select").forEach(el => {
+    el.addEventListener("input", calculate);
+});
+
+// ₹ formatter with negative support
+function formatINR(v) {
+    let sign = v < 0 ? "-" : "";
+    return sign + "₹" + Math.abs(v).toFixed(2);
+}
+
+function calculate() {
+    let qty = parseFloat(qtyEl.value);
+    let price = parseFloat(priceEl.value);
+    let amount = parseFloat(amountEl.value);
+    let gstRate = parseFloat(gstEl.value);
+
+    // Auto-fill amount if qty & price exist
+    if (!isNaN(qty) && !isNaN(price)) {
+        amount = qty * price;
+        amountEl.value = amount;
+    }
+
+    if (isNaN(amount) || isNaN(gstRate)) {
+        result.innerHTML = "";
+        return;
+    }
+
+    let gstAmount = amount * gstRate / 100;
+    let total = amount + gstAmount;
+
+    let cgstRate = gstRate / 2;
+    let sgstRate = gstRate / 2;
+
+    let cgst = gstAmount / 2;
+    let sgst = gstAmount / 2;
+
+    result.innerHTML = `
+        <div><strong>Amount:</strong> ${formatINR(amount)}</div>
+        <div><strong>GST (${gstRate}%):</strong> ${formatINR(gstAmount)}</div>
+        <div><strong>CGST (${cgstRate}%):</strong> ${formatINR(cgst)}</div>
+        <div><strong>SGST (${sgstRate}%):</strong> ${formatINR(sgst)}</div>
+        <div><strong>Total:</strong> ${formatINR(total)}</div>
+    `;
+}
+</script>
+
+</body>
+</html>
